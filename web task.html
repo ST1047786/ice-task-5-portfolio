@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex’s Web Portfolio</title>
+  <style>
+    /* Reset & Basics */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #e0e0e0;
+      background-color: #121212; /* Dark background */
+      scroll-behavior: smooth;
+    }
+    header, nav, main, section, footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #f5f5f5;
+    }
+    /* Nav */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #9cdcfe;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66d9ef;
+    }
+    /* Sections */
+    section {
+      margin: 50px 0;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #f5f5f5;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      color: #ccc;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #9cdcfe;
+    }
+    .project p {
+      color: #bdbdbd;
+    }
+    .blog article {
+      background: #1e1e1e;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #9cdcfe;
+      border-radius: 5px;
+    }
+    .blog h3 {
+      color: #9cdcfe;
+    }
+    .blog p {
+      color: #bdbdbd;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #9cdcfe;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Alex’s Web Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Intro -->
+    <section class="intro" id="about">
+      <h2>Welcome</h2>
+      <p>
+        Hi, my name is Alex — a passionate web developer from Codeburg.  
+        I love building digital experiences that are sleek, modern, and user-friendly.  
+        My goal is...
+      </p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio">
+        <div class="project">
+          <h3>Project One</h3>
+          <p>first project info...</p>
+        </div>
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>second project info...</p>
+        </div>
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>third project info...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog">
+        <article>
+          <h3>Why Minimalist Design Works</h3>
+          <p>Exploring the power of simplicity in web design and how it improves UX...</p>
+        </article>
+        <article>
+          <h3>Learning to Code in Codeburg</h3>
+          <p></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Contact: <a href="alex@fake.com">email</a> | 
+       <a href="#">GitHub</a> | 
+       <a href="#">LinkedIn</a>
+    </p>
+    <p>&copy; 2025 Alex’s Web Portfolio</p>
+  </footer>
+
+</body>
+</html>
